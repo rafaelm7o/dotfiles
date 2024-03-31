@@ -1,0 +1,1 @@
+{{ (bitwarden "item" "7fec6369-cfe4-4ad0-bebb-b01601274449").fields[0].value }}

@@ -1,0 +1,5 @@
+{{- if eq .chezmoi.os "darwin" -}}
+Host gitlab.com
+  AddKeysToAgent yes
+  IdentityFile ~/.ssh/gitlab
+{{- end -}}
