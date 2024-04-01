@@ -1,9 +1,6 @@
-#!/usr/bin/env bash
-#
-# prelude 
-#
-#
-set -e
+#!/bin/bash
+
+set -eufo pipefail
 
 echo ">>> Emacs"
 if test $(which emacs)
