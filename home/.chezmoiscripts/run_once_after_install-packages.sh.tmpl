@@ -3,11 +3,14 @@
 set -eufo pipefail
 
 echo ">>> Emacs"
-if test $(which emacs)
-then
-    # downloading 
-    echo "Downloading Prelude"
-    wget --no-check-certificate https://github.com/bbatsov/prelude/raw/master/utils/installer.sh -O - | sh
+if test $(which emacs); then
+    if [ -d "~/.emacs.d/prelude" ]; then 
+    	# downloading 
+    	echo "Downloading Prelude"
+    	wget --no-check-certificate https://github.com/bbatsov/prelude/raw/master/utils/installer.sh -O - | sh
+    else
+    	echo "Prelude already install"
+    fi
 else
     echo "Emacs not installed"
 fi
