@@ -2,5 +2,19 @@ packages:
   darwin:
     brews:
     - 'git'
+    - 'curl'
+    - 'jq'
+    - 'neovim'
+    - 'node'
+    - 'openjdk'
+    - 'wget'
     casks:
+    - 'hammerspoon'
+    - 'iterm2'
+    - 'signal'
+    - 'zoom'
+    - 'todoist'
+    - 'sublime-text'
+    - 'raycast'
+    - 'spotify'
     - 'firefox'
