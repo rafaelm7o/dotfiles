@@ -3,10 +3,12 @@
 
 brew bundle --no-lock --file=/dev/stdin <<EOF
 {{ range .packages.darwin.brews -}}
-brew {{ . | quote }}
+  brew {{ . | quote }}
 {{ end -}}
-{{ range .packages.darwin.casks -}}
-cask {{ . | quote }}
+{{- if eq .chezmoi.hostname "machina" }}
+  {{- range .packages.darwin.casks -}}
+    cask {{ . | quote }}
+  {{ end -}}
 {{ end -}}
 EOF
 {{ end -}}
