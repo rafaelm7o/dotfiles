@@ -24,6 +24,7 @@ packages:
     - 'neovim'
     - 'jq'
     - 'ulauncher'
+    - 'python311-pyxdg'
 repos:
   linux:
     - 'https://download.opensuse.org/repositories/home:stsiao/openSUSE_Tumbleweed/home:stsiao.repo'
