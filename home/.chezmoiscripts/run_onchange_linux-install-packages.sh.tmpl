@@ -1,6 +1,11 @@
 {{ if eq .chezmoi.os "linux" -}}
 #!/bin/sh
 
+{{ range .repos.linux -}}
+  sudo zypper addrepo {{ . | quote }}
+{{ end -}}
+sudo zypper refresh
+
 {{ range .packages.linux -}}
   sudo zypper install {{ . | quote }}
 {{ end -}}

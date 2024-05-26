@@ -22,3 +22,8 @@ packages:
     - 'emacs'
     - 'alacritty'
     - 'neovim'
+    - 'jq'
+    - 'ulauncher'
+repos:
+  linux:
+    - 'https://download.opensuse.org/repositories/home:stsiao/openSUSE_Tumbleweed/home:stsiao.repo'
