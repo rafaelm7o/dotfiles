@@ -1,0 +1,7 @@
+{{ if eq .chezmoi.os "linux" -}}
+#!/bin/sh
+
+{{ range .packages.linux -}}
+  sudo zypper install {{ . | quote }}
+{{ end -}}
+{{ end -}}
