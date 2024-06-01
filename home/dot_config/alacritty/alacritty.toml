@@ -1,4 +1,4 @@
-import = ["dracula.toml"]
+import = ["~/.config/alacritty/dracula.toml"]
 
 [shell]
 program = "/usr/local/bin/tmux"
@@ -14,5 +14,11 @@ padding.y = 10
 decorations = "Buttonless"
 
 [font]
-normal.family = "SauceCodePro Nerd Font Propo"
-size = 13
+size = 13.0
+
+[font.normal]
+family = "SauceCodePro Nerd Font Propo"
+
+[font.glyph_offset]
+x = 0
+y = 0
