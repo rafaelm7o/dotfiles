@@ -8,13 +8,11 @@ packages:
     - 'node'
     - 'openjdk'
     - 'wget'
+    - 'tmux'
     casks:
-    - 'hammerspoon'
-    - 'iterm2'
-    - 'signal'
-    - 'zoom'
-    - 'todoist'
-    - 'sublime-text'
+    - 'alacritty'
+    mybrews: []
+    mycasks:
     - 'raycast'
     - 'spotify'
     - 'firefox'
