@@ -1,7 +1,11 @@
 import = ["~/.config/alacritty/dracula.toml"]
 
 [shell]
+{{- if eq .chezmoi.os "darwin" }}
 program = "/usr/local/bin/tmux"
+{{ else }}
+program = "/usr/bin/tmux"
+{{ end }}
 args = ["new-session", "-A", "-D", "-s", "main"]
 
 [env]

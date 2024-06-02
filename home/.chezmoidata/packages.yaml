@@ -13,6 +13,11 @@ packages:
     - 'alacritty'
     mybrews: []
     mycasks:
+    - 'hammerspoon'
+    - 'signal'
+    - 'zoom'
+    - 'todoist'
+    - 'sublime-text'
     - 'raycast'
     - 'spotify'
     - 'firefox'
@@ -23,6 +28,7 @@ packages:
     - 'jq'
     - 'ulauncher'
     - 'python311-pyxdg'
+    - 'tmux'
 repos:
   linux:
     - 'https://download.opensuse.org/repositories/home:stsiao/openSUSE_Tumbleweed/home:stsiao.repo'
