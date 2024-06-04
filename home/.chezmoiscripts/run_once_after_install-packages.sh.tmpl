@@ -14,3 +14,13 @@ if test $(which emacs); then
 else
     echo "Emacs not installed"
 fi
+
+echo ">>> Fonts"
+rm -fr /tmp/fonts
+mkdir /tmp/fonts
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/SourceCodePro.zip -P /tmp/fonts 
+unzip /tmp/fonts/SourceCodePro.zip -d /tmp/fonts
+ls -la /tmp/fonts
+cp /tmp/fonts/SauceCodeProNerdFontPropo-Regular.ttf ~/.local/share/fonts/
+
+echo ">>>> FINISHED"

@@ -1,0 +1,4 @@
+[".local/share/fonts"]
+    type = "archive"
+    url = "https://www.fontsquirrel.com/fonts/download/dejavu-sans"
+    exact = true

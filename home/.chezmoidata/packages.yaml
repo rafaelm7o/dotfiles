@@ -29,6 +29,8 @@ packages:
     - 'ulauncher'
     - 'python311-pyxdg'
     - 'tmux'
+    - 'proton-vpn'
+    - 'fish'
 repos:
   linux:
     - 'https://download.opensuse.org/repositories/home:stsiao/openSUSE_Tumbleweed/home:stsiao.repo'
